@@ -1,0 +1,259 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+    .form-control{
+        margin-top:10px;
+        height:40px;
+        width:350px
+      }
+	.row label{
+        color: black;
+      }
+	  .info{
+        color:black;
+        float:left;
+        line-height:12px;
+        margin-left:8px;
+        margin-top:7%
+      }
+      .btn{
+        margin-right: 5px;
+        width:200px;
+		color:black;
+      }
+    .services-block {
+      position: relative;
+      margin-bottom: 30px;
+      float: left;
+      margin-top:5%
+    }
+    .services-block .inner-box {
+      position: relative;
+      padding: 30px 10px;
+      text-align: center;
+      border: 1px solid #eeeeee;
+      transition: all 300ms ease;
+      margin-left: 15%;
+      margin-right: 15%;
+      height: 500px;
+    }
+    .services-block .inner-box .icon-box {
+      position: relative;
+      color: #1a1d1f;
+      font-size: 60px;
+      line-height: 1em;
+      margin-bottom: 15px;
+      transition: all 300ms ease;
+    }
+    .services-block .inner-box .icon-box {
+      position: relative;
+      color: #1a1d1f;
+      font-size: 60px;
+      line-height: 1em;
+    }
+    .footer{
+        margin-left:20px;
+    }
+      </style>
+    <title>RentiFy</title>
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="{% static 'Img/logo1.jpeg' %}"
+          alt="logo"
+          id="logo"
+          width="140"
+          height="50"
+        />
+      </a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link text-dark" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="signup.html">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark text-dark" href="">Our Best Agent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark text-dark" href="/contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Login</a>
+        </li>
+      </ul>
+    </nav>
+   
+        <!-- first page -->
+ <h3> Find Your Best Property For Lease/Sell</h3>
+<div class="services-block col-md-4 col-sm-6 col-xs-12">
+    <div class="inner-box">
+      <div class="icon-box">
+        <img src="{% static '/Img/pic12.jpg' %}" alt="" style="width: 300px; height: 250px"/>
+      </div>
+      <h5 class="card-title">8 BHK Individual Houses For Sale In Brahmapura,0Muzaffarpur (2000 Sq.ft.)</h5>
+      <p class="card-text">Bb ganj, Brahmapura, Muzaffarpur</p>
+      <a href="#" class="btn btn-primary">Send Enquiry</a>
+      <a href="#" class="btn ">View Details</a>
+    </div>
+  </div>
+
+
+  <div class="services-block col-md-4 col-sm-6 col-xs-12">
+    <div class="inner-box">
+      <div class="icon-box">
+        <img src="{% static '/Img/pic10.jpeg' %}" alt="" style="width: 300px; height: 250px" />
+      </div>
+      <h5 class="card-title">3300 Sq.ft. Hotel & Restaurant For Rent In Narayanpur Anant, Muzaffarpur</h5>
+      <p class="card-text">Laxmichowk near one bite resturant, Narayanpur Anant, Muzaffarpur</p>
+      <a href="#" class="btn btn-primary">Send Enquiry</a>
+      <a href="#" class="btn ">View Details</a>
+    </div>
+  </div>
+
+    <div class="services-block col-md-4 col-sm-6 col-xs-12">
+    <div class="inner-box">
+      <div class="icon-box">
+        <img src="{% static '/Img/pic9.jpeg' %}" alt="" style="width: 300px; height: 250px" />
+      </div>
+      <h5 class="card-title">4 BHK Individual Houses For Sale In Beur, Patna (1550 Sq.ft.)</h5>
+      <p class="card-text">Magadh colony hasanpura road Beur patna 800002, Beur, Patna</p>
+      <a href="#" class="btn btn-primary">Send Enquiry</a>
+      <a href="#" class="btn ">View Details</a>
+    </div>
+  </div>
+
+  <div class="services-block col-md-4 col-sm-6 col-xs-12">
+    <div class="inner-box">
+      <div class="icon-box">
+        <img src="{% static '/Img/pic13.jpg' %}" alt="" style="width: 300px; height: 250px" />
+      </div>
+      <h5 class="card-title">3 BHK Individual Houses / Villas For Sale In Ahiyapur, Muzaffarpur (1600 Sq.ft.)</h5>
+      <p class="card-text">Ahiyapur chanakyapuri, Ahiyapur, Muzaffarpur</p>
+      <a href="#" class="btn btn-primary">Send Enquiry</a>
+      <a href="#" class="btn ">View Details</a>
+    </div>
+  </div>
+
+  <div class="services-block col-md-4 col-sm-6 col-xs-12">
+    <div class="inner-box">
+      <div class="icon-box">
+        <img src="{% static '/Img/pic14.jpeg' %}" alt="" style="width: 300px; height: 250px" />
+      </div>
+      <h5 class="card-title">3 BHK Flats & Apartments For Sale In Sakri Saraiya, Muzaffarpur (850 Sq.ft.)</h5>
+      <p class="card-text">Sakri gobarsahi road, Sakri Saraiya, Muzaffarpur</p>
+      <a href="#" class="btn btn-primary">Send Enquiry</a>
+      <a href="#" class="btn ">View Details</a>
+    </div>
+  </div>
+
+  <div class="services-block col-md-4 col-sm-6 col-xs-12">
+    <div class="inner-box">
+      <div class="icon-box">
+        <img src="{% static '/Img/pic15.jpeg' %}" alt="" style="width: 300px; height: 250px" />
+      </div>
+      <h5 class="card-title">4 BHK Individual Houses / Villas For Sale In Ahiyapur, Muzaffarpur (2000 Sq.ft.)</h5>
+      <p class="card-text">Ahiyapur, Ahiyapur, Muzaffarpur</p>
+      <a href="#" class="btn btn-primary">Send Enquiry</a>
+      <a href="#" class="btn ">View Details</a>
+    </div>
+  </div>  
+     
+<hr>
+
+   <div class="footer">
+      <footer class="py-5">
+        <div class="row">
+           <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div> 
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">WhatsApp</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Connect to our best Agents</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="cfvbwq">
+                <button class="btn btn-secondary" type="button" fdprocessedid="04ueaq">Send Quarry</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          {% comment %} <div class="info-D">
+            <h2>Social networks</h2>
+            <a class="" href="#" title="FaceBook"><i class="fa-brands fa-facebook fa-2x" width="24" height="24"></i></a>
+            <a class="" href="#" title="FaceBook"><i class="fa-brands fa-twitter fa-2x" width="24" height="24"></i></a>
+            <a class="" href="#" title="FaceBook"><i class="fa-brands fa-instagram fa-2x" width="24" height="24"></i></a>
+            </div>  {% endcomment %}
+        </div>
+      </footer>
+    </div>
+
+       
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

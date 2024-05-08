@@ -1,0 +1,604 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+
+  <title>RENTIFY </title>
+</head>
+<style>
+  .container1 {
+        height: 400px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+        text-align:center
+        /* box-shadow:10px black; */
+      }
+      .col-sm-2{
+        color:white;
+        margin-top:10px;
+      }
+      .form-control{
+        margin-top:10px;
+        height:40px;
+        width:300px
+      }
+      .btn{
+        width:150px;
+      }
+      .info{
+        color:black;
+        float:left;
+        line-height:18px;
+        margin-left:8px;
+        margin-top:5%
+      }
+
+      .info-D{
+        color:black;
+        float:left;
+        margin-left:15px;
+        margin-top:5%;
+        align-items: center;
+      }
+        .about {
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+      }
+      .about-l {
+        width: 100%;
+      }
+      .about-img {
+        height: 400px;
+        width: 600px;
+        margin-top: 5%;
+        margin-left: 15px;
+      }
+      .about-l h3 {
+        font-size: 30px;
+      }
+      .about-l h4 {
+        color: green;
+      
+      }
+	  .card{
+        margin-top: 15px;
+		margin-left:5%;
+		margin-right:5%
+      }
+      .contact-details {
+      background-color: #f8f9fa;
+      padding: 5px 0;
+    }
+    .contact-details p
+     {
+      margin-bottom: 0;
+    }
+    .card-img-top{
+      height: 300px;
+    }
+	.main {
+        height: 400px;
+        width: 100%;
+        background-color: #d8d7d7;
+        border-radius: 10px;
+        text-align:center;
+        /* box-shadow:2px 5px 8px 8px #100e0e; */
+      }
+      .col-sm-2{
+        color:white;
+        margin-top:10px;
+      }
+      .form-control{
+        margin-top:10px;
+        height:40px;
+        width:350px
+      }
+	.row label{
+        color: black;
+      }
+	  .info{
+        color:black;
+        float:left;
+        line-height:12px;
+        margin-left:8px;
+        margin-top:7%
+      }
+	  .info h2{
+		font-size:25px;
+	  }
+	  .info-D h2{
+		font-size:25px;
+	  }
+      .info-D{
+        color:black;
+        float:left;
+        margin-left:15px;
+        margin-top:7%
+      }
+      .btn{
+        margin-right: 5px;
+        width:200px;
+		color:black;
+      }
+	  .container p{
+		color:#3b264e;
+		margin-left:15px;
+		margin-top:5%;
+	  }
+	   .container h3{
+		margin-left:15px
+	  }
+</style>
+<body>
+  <!--NAVBAR-->
+  <div class="right-head fo-small">
+  <div class="contact-details text-center">
+    <p>Contact us: Email: info@example.com | Phone: +1234567890</p>
+  </div>
+  
+</div>
+ <nav class="navbar bg-light">
+     <a class="navbar-brand" href="#">
+      <img src="{% static 'img/logo1.jpeg' %}" alt="logo" id="logo" width="100" height="60"padding-left="10px">
+    </a>
+
+    <ul class="nav justify-content-end">
+      <li class='nav-item'>
+        <a class='nav-link text-dark text-dark ' href="/home.html" style='border-radius: 0px;'>Home</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link text-dark text-dark ' href="/services" style='border-radius: 0px;'>Services</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Find Property
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/findRent">Rent </a>
+          <a class="dropdown-item" href="/findLease">Lease/Sale</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Post Property
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/postRent">Rent </a>
+          <a class="dropdown-item" href="/postLease">Lease/Sale</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link text-dark text-dark ' href='/signup' style='border-radius: 0px;'>Signup</a>
+      </li>
+      </li>
+    </ul>
+  </nav><!--NAVBAR END-->
+  <!--COROUSEL START-->
+  <div class="conatiner m-3" id="cont">
+    <div class="col-lg-12">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100 imgage-fluid " height="400px" width="200px" src="{% static 'img/hall-Img.jpg' %}"
+              alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100 imgage-fluid " height="400px" width="200px" src="{% static '/img/slide3.webp' %}"
+              alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      </div><!--COROUSEL ENDS-->
+    <!--CARD STARTS-->
+  <div class="container">
+  <p>We are Offering the Best Real Estate</p>
+ <h3>Best House to Purchase</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="static/img/pic3.jpeg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a href="">Asad Apartments</a></h5>
+            <ul class="list-unstyled list-inline mb-0">
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"> </i>
+              </li>
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+              </li> 
+              <li class="list-inline-item">
+                <p class="text-muted">4.5 (413)</p>
+              </li>
+            </ul>
+			<!-- <h3>Law gate</h3> -->
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, incidunt.</p>
+            <p class="card-text">
+              Rs5000
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="static/img/pic5.jpeg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a href="">Khushi Enclave</a></h5>
+          <ul class="list-unstyled list-inline mb-0">
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"> </i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <p class="text-muted">4.5 (413)</p>
+            </li>
+          </ul>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, incidunt.</p>
+          <p class="card-text">
+            Rs5000
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="static/img/pic14.jpeg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a href="">Jaisika Apartments</a></h5>
+          <ul class="list-unstyled list-inline mb-0">
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"> </i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <p class="text-muted">4.5 (413)</p>
+            </li>
+          </ul>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, incidunt.</p>
+          <p class="card-text">
+            Rs5000
+          </p>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--CARD ENDS-->
+<div class="container">
+  <p>Our Featured Properties For Sale and Rent</p>
+ <h3>Properties For Sale & Rent</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="static/img/pic11.jpeg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a href="">Asad Apartments</a></h5>
+            <ul class="list-unstyled list-inline mb-0">
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"> </i>
+              </li>
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+               <li class="list-inline-item me-0">
+                <i class="fas fa-star text-warning fa-xs"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+              </li> 
+              <li class="list-inline-item">
+                <p class="text-muted">4.5 (413)</p>
+              </li>
+            </ul>
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, incidunt.</p>
+            <p class="card-text">
+              Rs5000
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="static/img/pic5.jpeg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a href="">Khushi Enclave</a></h5>
+          <ul class="list-unstyled list-inline mb-0">
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"> </i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <p class="text-muted">4.5 (413)</p>
+            </li>
+          </ul>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, incidunt.</p>
+          <p class="card-text">
+            Rs5000
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="static/img/pic14.jpeg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold"><a href="">Jaisika Apartments</a></h5>
+          <ul class="list-unstyled list-inline mb-0">
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"> </i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item me-0">
+              <i class="fas fa-star text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-star-half-alt text-warning fa-xs"></i>
+            </li>
+            <li class="list-inline-item">
+              <p class="text-muted">4.5 (413)</p>
+            </li>
+          </ul>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, incidunt.</p>
+          <p class="card-text">
+            Rs5000
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--ABOUT SECTION--> 
+        <div class="about">
+        <div class="about-l">
+            <h4>About Rentify</h4>
+            <h3>Who We Are</h3>
+            <p><b>Rentify</b>, A leading real estate consulting firm in Muzaffarpur (Bihar).
+              The firm has years of experience in the residential and commercial real estate sector.
+               The company has numerous residential and commercial properties for sale and rent in its portfolio.
+                You can contact Rentify,to get the best suitable property (s) in the top localities 
+                of Muzaffarpur, such as Malighat, Mithanpura, Vastu Vihar, etc.
+                We strongly believe in transparency in all that we do and have a “Customer First”, attitude. 
+                All our properties have competitive pricing as we partnered with reliable builders, developers, and landlords across Muzaffarpur.
+                 Since our inception, we have provided thousands of people with their dream homes and su
+                </p>
+                <p>
+             
+              </p>
+              <p>
+             </p>
+          </div><!--ABOUT IMAGE-->
+          <div class="Img">
+            <img src="static/img/land1.jpg" class="about-img" />
+          </div>
+        </div><!--ABOUT ENDS-->
+       
+		<h2>Contact US </h2>
+    <div class="main">
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
+       <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputemail" placeholder="Email" />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label"
+          >Password:</label
+        >
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" placeholder="password"/>
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="message" class="col-sm-2 col-form-label"
+          >Subject:</label
+        >
+        <div class="col-sm-10">
+          <input type="message" class="form-control" id="inputSub" placeholder="subject"/>
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="number" class="col-sm-2 col-form-label"
+          >Mobile:</label
+        >
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputMob"/>
+        </div>
+      </div>
+    <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label"
+          width="70px">Message:</label
+        >
+        <div class="col-sm-10">
+          <textarea type="password" class="form-control" id="inputMsg" placeholder="write-msg"></textarea>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary">Send Message</button>
+       
+        <div class="info">
+        <h2>Say Hello</h2>
+        <P>Email: contact@gmail.com</P>
+        <P>Phone: 9900990099</P>
+        </div>
+         <div class="info-D">
+        <h2>Find us in</h2>
+        <P>lnmcbm,bhagwanpur,<br> muzaffarpur</P>
+        </div>
+        <div class="info-D">
+            <h2>Social networks</h2>
+            <a class="" href="#" title="FaceBook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a class="" href="#" title="FaceBook"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            <a class="" href="#" title="FaceBook"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div> 
+    </div>
+
+
+    <div class="footer">
+      <footer class="py-5">
+        <div class="row">
+           <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div> 
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">WhatsApp</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Connect to our best Agents</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="cfvbwq">
+                <button class="btn btn-secondary" type="button" fdprocessedid="04ueaq">Send Quarry</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+       
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

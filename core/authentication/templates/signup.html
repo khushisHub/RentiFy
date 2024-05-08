@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{% static 'CSS/app.css' %}">
+
+    <title>Rentify</title>
+</head>
+<body >
+  <nav class="navbar bg-light">
+      
+        <a class="navbar-brand" href="#">
+          <img src="static/img/logo1.jpeg" alt="logo" id="logo" width="100" height="300">
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-dark" href="">Our Best Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/login">Login</a>
+            </li>
+          </ul>
+    </nav>
+    <section class="signup">
+        <div class="container ">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Sign up</h2>
+                    <form method="POST" class="register-form" id="register-form">
+                        
+                        <div class="form-group">
+                            <label htmlFor="name">
+                            <i class="fa fa-user"></i>
+                            </label>
+                            <input type="text" name="name" id="name" autocomplete="off"
+                               
+                                placeholder="Your Name"
+                            />
+                        </div>
+
+                         <div class="form-group">
+                            <label htmlFor="email">
+                            <i class="fa fa-envelope"></i>
+                            </label>
+                            <input type="email" name="email" id="email" autoComplete="off"
+                           
+                                placeholder="Your Email"
+                            />
+                        </div>
+
+                         <div class="form-group">
+                            <label htmlFor="phone">
+                            <i class="fa fa-phone"></i>
+                            </label>
+                            <input type="number" name="phone" id="phone" autoComplete="off"
+                               
+                                placeholder="Your Phone"
+                            />
+                        </div>
+
+                         <div class="form-group">
+                            <label htmlFor="work">
+                            <i class="fa fa-briefcase"></i>
+                            </label>
+                            <input type="text" name="work" id="work" autoComplete="off"
+                              
+                                placeholder="Your Profession"
+                            />
+                        </div>
+
+                         <div class="form-group">
+                            <label htmlFor="password">
+                            <i class="fa fa-lock"></i>
+                            </label>
+                            <input type="password" name="password" id="password" autoComplete="off"
+                             
+                                placeholder="Your Password"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label htmlFor="cpassword">
+                            <i class="fa fa-lock"></i>
+                            </label>
+                            <input type="password" name="cpassword" id="cpassword" autoComplete="off"
+                               
+                                placeholder="Confirm Your Password"
+                            />
+                        </div>
+                       
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit"
+                               
+                             
+                            />
+                        </div>
+
+                    </form>
+                </div>
+                
+                    <div class="signup-image">
+                        <figure>
+                            <img src="static/img/signup.png" alt="registration pic" />
+                        </figure>
+                        <a to="/login" class="signup-image-link">I have already Registered</a>
+                    </div>
+               
+            </div>
+        </div>
+   </section>
+    </body>
+    </html>

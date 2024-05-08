@@ -1,0 +1,61 @@
+
+body{
+   
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+nav{
+    position: fixed;
+    color: black;
+    background-color: brown;
+}
+li{
+  
+    color: black;
+}
+#logo{
+    margin-left: 10px;
+}
+
+.jumbotron{
+     width: 1000px;
+     margin-left: 140px;
+     margin-top: 90px;
+     background-color: #39acae;
+     color: white;
+     height: 350px;
+}
+#btn1{
+    background-color: #dfae45;
+   margin-left: 330px;
+   margin-top: 20px;
+   width: 200px;
+}
+#search{
+    width: 600px;
+    margin-left: 100px;
+}
+form{
+    
+
+    margin-top: 70px;
+
+}
+.col{
+    margin-top: 150px;
+}
+.card{
+    width: 18rem;
+    margin-left: 15px;
+}
+.border{
+    border-radius: 60px;
+}
+#p1{
+    font-size: 15px;
+}
+#contact{
+    margin-top: 50px;
+}
